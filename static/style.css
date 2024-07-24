@@ -1,0 +1,157 @@
+body {
+    background-color: #435165;
+    margin: 0;
+  }
+
+  login, register {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    margin-bottom: 10px; 
+  }
+  
+  button {
+    background-color: #007bff; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none; 
+    cursor: pointer; 
+  }
+  .login h1, .register h1 {
+    text-align: center; /* Centra el texto */
+    color: #5b6574; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    padding: 20px 0; /* Espaciado arriba y abajo */
+    border-bottom: 1px solid #dee0e4; /* Línea debajo del texto */
+}
+.login .links, .register .links {
+    display: flex; /* Coloca los enlaces en fila */
+    padding: 0 15px; /* Espaciado a los lados */
+}
+.login .links a, .register .links a {
+    color: #adb2ba; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    padding: 0 10px 10px 10px; /* Espaciado dentro del enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+.login .links a:hover, .register .links a:hover {
+    color: #9da3ac; /* Color del enlace al pasar el ratón */
+}
+.login .links a.active, .register .links a.active {
+    border-bottom: 3px solid #3274d6; /* Línea debajo del enlace activo */
+    color: #3274d6; /* Color del enlace activo */
+}
+.login form, .register form {
+    display: flex; /* Coloca los elementos del formulario en fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center; /* Centra el formulario */
+    padding-top: 20px; /* Espaciado arriba */
+}
+.login form label, .register form label {
+    display: flex; /* Coloca el texto del label en fila */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 50px; /* Ancho del label */
+    height: 50px; /* Alto del label */
+    background-color: #3274d6; /* Color de fondo del label */
+    color: #ffffff; /* Color del texto del label */
+}
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"],
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+    width: 310px; /* Ancho de los campos de entrada */
+    height: 50px; /* Alto de los campos de entrada */
+    border: 1px solid #dee0e4; /* Borde de los campos de entrada */
+    margin-bottom: 20px; /* Espaciado abajo */
+    padding: 0 15px; /* Espaciado dentro del campo */
+}
+.login form input[type="submit"], .register form input[type="submit"] {
+    width: 100%; /* Ancho del botón */
+    padding: 15px; /* Espaciado dentro del botón */
+    margin-top: 20px; /* Espaciado arriba */
+    background-color: #3274d6; /* Color de fondo del botón */
+    border: 0; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del texto del botón */
+    transition: background-color 0.2s; /* Efecto de transición del color de fondo */
+}
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
+    background-color: #2868c7; /* Color de fondo del botón al pasar el ratón */
+}
+.navtop {
+    background-color: #2f3947; /* Color de fondo de la barra */
+    height: 60px; /* Altura de la barra */
+    width: 100%; /* Ancho completo */
+    border: 0; /* Sin borde */
+}
+.navtop div {
+    display: flex; /* Coloca los elementos en fila */
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 1000px; /* Ancho del contenedor */
+    height: 100%; /* Altura completa */
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex; /* Coloca los elementos en fila */
+    align-items: center; /* Centra verticalmente */
+}
+.navtop div h1 {
+    flex: 1; /* Ocupa el espacio disponible */
+    font-size: 24px; /* Tamaño del texto */
+    padding: 0; /* Sin espaciado */
+    margin: 0; /* Sin margen */
+    color: #eaebed; /* Color del texto */
+    font-weight: normal; /* Peso normal del texto */
+}
+.navtop div a {
+    padding: 0 20px; /* Espaciado a los lados */
+    text-decoration: none; /* Sin subrayado */
+    color: #c1c4c8; /* Color del texto del enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+.navtop div a i {
+    padding: 2px 8px 0 0; /* Espaciado dentro del icono */
+}
+.navtop div a:hover {
+    color: #eaebed; /* Color del texto del enlace al pasar el ratón */
+}
+body.loggedin {
+    background-color: #f3f4f7; /* Color de fondo */
+}
+.content {
+    width: 1000px; /* Ancho del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+.content h2 {
+    margin: 0; /* Sin margen */
+    padding: 25px 0; /* Espaciado arriba y abajo */
+    font-size: 22px; /* Tamaño del texto */
+    border-bottom: 1px solid #e0e0e3; /* Línea debajo del título */
+    color: #4a536e; /* Color del texto */
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); /* Sombra alrededor */
+    margin: 25px 0; /* Espaciado arriba y abajo */
+    padding: 25px; /* Espaciado dentro */
+    background-color: #fff; /* Color de fondo */
+}
+.content > p table td, .content > div table td {
+    padding: 5px; /* Espaciado dentro de las celdas de la tabla */
+}
+.content > p table td:first-child, .content > div table td:first-child {
+    font-weight: bold; /* Texto en negrita */
+    color: #4a536e; /* Color del texto */
+    padding-right: 15px; /* Espaciado a la derecha */
+}
+.content > div p {
+    padding: 5px; /* Espaciado dentro del párrafo */
+    margin: 0 0 10px 0; /* Espaciado abajo */
+}
+
